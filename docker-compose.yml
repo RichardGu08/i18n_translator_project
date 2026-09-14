@@ -1,0 +1,65 @@
+services:
+  mysql:
+    image: mysql:8.4
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    ports:
+      - "${MYSQL_PORT}:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p$$MYSQL_ROOT_PASSWORD"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  inngest:
+    image: inngest/inngest:latest
+    restart: unless-stopped
+    command: ["inngest", "dev", "-u", "http://dashboard-backend:8000/api/inngest", "--host", "0.0.0.0"]
+    depends_on:
+      - dashboard-backend
+    ports:
+      - "${INNGEST_PORT}:8288"
+
+  dashboard-backend:
+    build:
+      context: ./dashboard/backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    ports:
+      - "${DASHBOARD_BACKEND_PORT}:8000"
+    environment:
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_HOST: mysql
+      MYSQL_PORT: 3306
+      EXPORT_OUTPUT_DIR: ${EXPORT_OUTPUT_DIR}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      INNGEST_DEV: "1"
+      INNGEST_BASE_URL: http://inngest:8288
+    volumes:
+      - ./data/output:/data/output
+      - ./data/input:/data/input
+
+  dashboard-frontend:
+    build:
+      context: ./dashboard/frontend
+      args:
+        VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+    restart: unless-stopped
+    depends_on:
+      - dashboard-backend
+    ports:
+      - "${DASHBOARD_FRONTEND_PORT}:80"
+
+volumes:
+  mysql_data:
