@@ -1,0 +1,171 @@
+{
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close",
+    "loading": "Loading..."
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "profile": "My Profile",
+    "logout": "Log out"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome back",
+      "email_label": "Email address",
+      "password_label": "Password",
+      "submit": "Sign in",
+      "forgot_password": "Forgot your password?"
+    },
+    "signup": {
+      "title": "Create your account",
+      "submit": "Sign up"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "notifications": {
+      "email": "Email notifications",
+      "sms": "SMS notifications",
+      "description": "Choose how you'd like to be notified about updates to your account."
+    }
+  },
+  "greetings": {
+    "welcome_user": "Welcome back, {{name}}!",
+    "hello_user_short": "Hi {name}!",
+    "items_in_cart": "You have {{count}} items in your cart."
+  },
+  "errors": {
+    "not_found": "The page you're looking for doesn't exist.",
+    "server_error": "Something went wrong. Please try again.",
+    "network_timeout": "We couldn't reach the server in time. Check your connection and try again.",
+    "validation": {
+      "required_field": "This field is required.",
+      "invalid_email": "Please enter a valid email address."
+    }
+  },
+  "empty_states": {
+    "no_results": "No results found for your search.",
+    "no_results_hint": ""
+  },
+  "shop": {
+    "brand_name": "StrideForge",
+    "tagline": "Gear built for how you move.",
+    "nav": {
+      "running": "Running",
+      "basketball": "Basketball",
+      "training": "Training & Gym",
+      "trail": "Trail & Hiking",
+      "cleats": "Cleats & Turf",
+      "sale": "Sale"
+    },
+    "categories": {
+      "mens_shoes": "Men's Shoes",
+      "womens_shoes": "Women's Shoes",
+      "kids_shoes": "Kids' Shoes",
+      "accessories": "Socks & Insoles"
+    },
+    "product_list": {
+      "title": "Shop Athletic Shoes",
+      "results_count": "{{count}} shoes found",
+      "sort_by": "Sort by",
+      "sort_options": {
+        "relevance": "Relevance",
+        "price_low_high": "Price: Low to High",
+        "price_high_low": "Price: High to Low",
+        "newest": "Newest Arrivals",
+        "top_rated": "Top Rated"
+      },
+      "filters": {
+        "title": "Filters",
+        "clear_all": "Clear all",
+        "size": "Size",
+        "width": "Width",
+        "color": "Color",
+        "brand": "Brand",
+        "sport": "Sport",
+        "price_range": "Price Range",
+        "surface": "Surface Type",
+        "surface_options": {
+          "road": "Road",
+          "track": "Track",
+          "trail": "Trail",
+          "court": "Court",
+          "turf": "Turf"
+        }
+      }
+    },
+    "product_detail": {
+      "select_size": "Select a size",
+      "size_guide": "Size guide",
+      "add_to_cart": "Add to Cart",
+      "add_to_wishlist": "Add to Wishlist",
+      "out_of_stock": "Out of Stock",
+      "low_stock_warning": "Only {{count}} left in your size!",
+      "description_title": "Product Details",
+      "specs": {
+        "weight": "Weight",
+        "drop": "Heel-to-toe Drop",
+        "cushioning": "Cushioning",
+        "upper_material": "Upper Material",
+        "best_for": "Best For"
+      },
+      "reviews": {
+        "title": "Customer Reviews",
+        "average_rating": "{{rating}} out of 5 stars",
+        "based_on_count": "Based on {{count}} reviews",
+        "write_review": "Write a Review",
+        "verified_buyer": "Verified Buyer",
+        "fit_feedback": {
+          "runs_small": "Runs small",
+          "true_to_size": "True to size",
+          "runs_large": "Runs large"
+        }
+      },
+      "shipping_info": "Free shipping on orders over {{amount}}. Estimated delivery in {{days}} business days."
+    },
+    "cart": {
+      "title": "Your Cart",
+      "empty_cart": "Your cart is empty. Time to find your next pair!",
+      "quantity": "Quantity",
+      "remove_item": "Remove",
+      "subtotal": "Subtotal",
+      "estimated_shipping": "Estimated Shipping",
+      "proceed_to_checkout": "Proceed to Checkout",
+      "promo_code_placeholder": "Enter promo code",
+      "apply_code": "Apply"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "shipping_address": "Shipping Address",
+      "payment_method": "Payment Method",
+      "order_summary": "Order Summary",
+      "place_order": "Place Order",
+      "order_confirmation": "Thank you, {{name}}! Your order #{{order_id}} has been placed.",
+      "delivery_estimate": "Arrives by {{date}}"
+    },
+    "promotions": {
+      "banner_sale": "End of Season Sale — Up to 40% off select running shoes",
+      "free_shipping_threshold": "Free shipping on orders over {{amount}}",
+      "loyalty_points_earned": "You'll earn {{points}} reward points with this purchase."
+    },
+    "account": {
+      "greeting": "Hi {name}, welcome back to your account.",
+      "order_status_update": "Hey {name}, your order #{order_id} just shipped!",
+      "loyalty_tier": "{name}, you're now a {tier} member!"
+    },
+    "recommendations": {
+      "personalized_title": "Picked for you, {name}",
+      "based_on_history": "Because {name} loved the {product}, we think you'll like these too."
+    },
+    "abandoned_cart_email": {
+      "subject": "{name}, you left something in your cart",
+      "body": "Hi {name}, your {item} is still waiting for you — grab it before it sells out."
+    }
+  }
+}

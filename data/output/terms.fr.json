@@ -1,0 +1,171 @@
+{
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "close": "Fermer",
+    "loading": "Chargement..."
+  },
+  "nav": {
+    "home": "Accueil",
+    "dashboard": "Tableau de bord",
+    "profile": "Mon profil",
+    "logout": "Se déconnecter"
+  },
+  "auth": {
+    "login": {
+      "title": "Ravi de vous revoir",
+      "email_label": "Adresse courriel",
+      "password_label": "Mot de passe",
+      "submit": "Se connecter",
+      "forgot_password": "Mot de passe oublié ?"
+    },
+    "signup": {
+      "title": "Créez votre compte",
+      "submit": "S'inscrire"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "language": "Langue",
+    "notifications": {
+      "email": "Notifications par e-mail",
+      "sms": "Notifications par SMS",
+      "description": "Choisissez comment vous souhaitez être informé des mises à jour de votre compte."
+    }
+  },
+  "greetings": {
+    "welcome_user": "Content de vous revoir, {{name}} !",
+    "hello_user_short": "Salut {{name}} !",
+    "items_in_cart": "Vous avez {{count}} articles dans votre panier."
+  },
+  "errors": {
+    "not_found": "La page que vous recherchez n'existe pas.",
+    "server_error": "Une erreur s'est produite. Veuillez réessayer.",
+    "network_timeout": "Nous n'avons pas pu atteindre le serveur à temps. Vérifiez votre connexion et réessayez.",
+    "validation": {
+      "required_field": "Ce champ est requis.",
+      "invalid_email": "Veuillez entrer une adresse e-mail valide."
+    }
+  },
+  "empty_states": {
+    "no_results": "Aucun résultat trouvé pour votre recherche.",
+    "no_results_hint": ""
+  },
+  "shop": {
+    "brand_name": "StrideForge",
+    "tagline": "Équipement conçu pour votre mouvement.",
+    "nav": {
+      "running": "Course",
+      "basketball": "Basket",
+      "training": "Entraînement & Salle de sport",
+      "trail": "Sentier & Randonnée",
+      "cleats": "Crampons & Terrain",
+      "sale": "Vente"
+    },
+    "product_detail": {
+      "reviews": {
+        "based_on_count": "Basé sur {{count}} avis",
+        "write_review": "Écrire un avis",
+        "verified_buyer": "Acheteur vérifié",
+        "fit_feedback": {
+          "runs_small": "Taille petite",
+          "true_to_size": "Taille réelle",
+          "runs_large": "Taille grande"
+        },
+        "title": "Avis des clients",
+        "average_rating": "{{rating}} sur 5 étoiles"
+      },
+      "shipping_info": "Livraison gratuite sur les commandes de plus de {{amount}}. Livraison estimée dans {{days}} jours ouvrables.",
+      "select_size": "Sélectionnez une taille",
+      "size_guide": "Guide des tailles",
+      "add_to_cart": "Ajouter au panier",
+      "add_to_wishlist": "Ajouter à la liste de souhaits",
+      "out_of_stock": "Rupture de stock",
+      "low_stock_warning": "Il ne reste que {{count}} dans votre taille !",
+      "description_title": "Détails du produit",
+      "specs": {
+        "weight": "Poids",
+        "drop": "Dénivelé talon-orteils",
+        "cushioning": "Amorti",
+        "upper_material": "Matériau supérieur",
+        "best_for": "Idéal pour"
+      }
+    },
+    "cart": {
+      "title": "Votre panier",
+      "empty_cart": "Votre panier est vide. Il est temps de trouver votre prochaine paire !",
+      "quantity": "Quantité",
+      "remove_item": "Retirer",
+      "subtotal": "Sous-total",
+      "estimated_shipping": "Frais de port estimés",
+      "proceed_to_checkout": "Passer à la caisse",
+      "promo_code_placeholder": "Entrez le code promo",
+      "apply_code": "Appliquer"
+    },
+    "checkout": {
+      "title": "Caisse",
+      "shipping_address": "Adresse de livraison",
+      "payment_method": "Méthode de paiement",
+      "order_summary": "Résumé de la commande",
+      "place_order": "Passer la commande",
+      "order_confirmation": "Merci, {{name}} ! Votre commande #{{order_id}} a été passée.",
+      "delivery_estimate": "Arrive le {{date}}"
+    },
+    "promotions": {
+      "banner_sale": "Vente de fin de saison — Jusqu'à 40 % de réduction sur une sélection de chaussures de course",
+      "free_shipping_threshold": "Livraison gratuite sur les commandes de plus de {{amount}}",
+      "loyalty_points_earned": "Vous gagnerez {{points}} points de fidélité avec cet achat."
+    },
+    "account": {
+      "greeting": "Bonjour {name}, bienvenue de nouveau dans votre compte.",
+      "order_status_update": "Salut {name}, votre commande #{order_id} vient d'être expédiée !",
+      "loyalty_tier": "{name}, vous êtes maintenant membre {tier} !"
+    },
+    "recommendations": {
+      "personalized_title": "Choisi pour vous, {name}",
+      "based_on_history": "Parce que {name} a aimé le {product}, nous pensons que vous aimerez aussi ceux-ci."
+    },
+    "abandoned_cart_email": {
+      "subject": "{name}, vous avez laissé quelque chose dans votre panier",
+      "body": "Bonjour {name}, votre {item} vous attend toujours — prenez-le avant qu'il ne soit épuisé."
+    },
+    "categories": {
+      "mens_shoes": "Chaussures pour hommes",
+      "womens_shoes": "Chaussures pour femmes",
+      "kids_shoes": "Chaussures pour enfants",
+      "accessories": "Chaussettes & Semelles"
+    },
+    "product_list": {
+      "title": "Achetez des chaussures de sport",
+      "results_count": "{{count}} chaussures trouvées",
+      "sort_by": "Trier par",
+      "sort_options": {
+        "relevance": "Pertinence",
+        "price_low_high": "Prix : Croissant",
+        "price_high_low": "Prix : Décroissant",
+        "newest": "Nouveautés",
+        "top_rated": "Les mieux notées"
+      },
+      "filters": {
+        "title": "Filtres",
+        "clear_all": "Tout effacer",
+        "size": "Taille",
+        "width": "Largeur",
+        "color": "Couleur",
+        "brand": "Marque",
+        "sport": "Sport",
+        "price_range": "Plage de prix",
+        "surface": "Type de surface",
+        "surface_options": {
+          "road": "Route",
+          "track": "Piste",
+          "trail": "Sentier",
+          "court": "Terrains",
+          "turf": "Gazon"
+        }
+      }
+    }
+  }
+}

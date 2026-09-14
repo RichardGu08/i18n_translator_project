@@ -1,3 +1,9 @@
+# Node / frontend
+node_modules/
+dashboard/frontend/dist/
+dashboard/frontend/.vite/
+dashboard/frontend/*.tsbuildinfo
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
